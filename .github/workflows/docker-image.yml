@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v0.6.0
         with:
-          image: gcr.io/cloudrun/hello
+          image: gcr.io/sonorous-parsec-228911/test-cloudrun
           service: hello-cloud-run
 
       - name: Use Output
