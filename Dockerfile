@@ -6,7 +6,6 @@ WORKDIR /src
 
 # download module
 COPY go.mod /src
-COPY go.sum /src
 RUN go mod download
 
 # build applicaiton
