@@ -22,7 +22,6 @@ FROM alpine:latest
 WORKDIR /opt
 
 RUN apk --no-cache add ca-certificates
-COPY --from=builder /src/conf /opt/conf
 COPY --from=builder /src/app /opt/app
 
 EXPOSE 8080
